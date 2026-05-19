@@ -347,6 +347,114 @@ footer{
     font-size: 15px;
 }
 
+.kya h1{
+
+}
+
+@media screen and (max-width: 768px) {
+ 
+    header{
+        flex-direction: column;
+    }
+
+    .top2{
+    width:100%;
+    height:650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items:center;
+    display:block;
+    overflow-x: hidden;
+    }
+
+    .top3 h1 {
+        text-align: center;
+    }
+
+    .top3 h2 {
+        text-align: center;
+    }
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    padding:20px 40px;
+}
+
+.section1{
+    flex-direction: column;
+  
+}
+
+.section1 img{
+    width:100%;
+    height:300px;
+}
+
+.section2{
+    width:100%;
+    text-align: center;
+    margin-top: -170px;
+} 
+
+.our h1{
+    text-align: center;
+}
+
+.our h2{
+    text-align: center;
+}
+
+
+.hlo1{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    padding:20px 40px;
+}
+
+
+.sss h1{
+    text-align: center;
+}
+
+.sss h2{
+    text-align: center;
+}
+
+.csht {
+    flex-direction: column;
+    text-align: center;
+    cursor:pointer;
+}
+
+.foot{
+    flex-direction: column;
+}
+
+.foot img{
+    width:100%;
+    height:200px;
+}
+
+footer{
+    flex-direction: column;
+}
+
+.feet img{
+    margin-left: 40px;
+}
+
+.last h4{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+}
+
+
 
 
 
