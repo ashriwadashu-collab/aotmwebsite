@@ -9,13 +9,17 @@ body{
     //background:black;
 }
 
+
+
+
+
 header{
     display:flex;
     justify-content: space-between;
-    background:black;
+    background:rgba(11, 16, 38, 0.95);
     color:white;
     cursor:pointer;
-    padding:15px 30px;
+    padding:15px 80px;
     text-transform: capitalize;
     align-items: center;
     position: fixed;
@@ -23,16 +27,22 @@ header{
     width:100%;
 }
 
+.logo{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
 nav a{
     text-decoration: none;
     margin:10px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color:white;
 }
 
 .top2 {
-    background:url(https://i.pinimg.com/1200x/d7/ab/df/d7abdfa5008e06e8cf0f87f85d66429d.jpg);
+    background-image: url("images/newpage.jpeg");
     height:600px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,23 +51,27 @@ nav a{
 }
 
 .top2 h2{
-    text-align: center;
+    //text-align: center;
     //margin-left: 415px;
     padding-top: 220px;
     color:orange;
     //text-shadow: 1px 1px 2px white;
     text-transform: capitalize;
     font-weight: bolder;
+     margin-left:20px;
+     font-family: 'Pacifico', cursive;
 }
 
 .top2 p{
-    text-align: center;
+    //text-align: center;
     color:white;
     text-transform: capitalize;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 40px;
     font-weight: bolder;
+    margin-left:20px;
+     font-family: 'Anton', sans-serif;
 }
 
 .top2 span{
@@ -66,42 +80,50 @@ nav a{
 }
 
 .top2 h3{
-    text-align: center;
+    //text-align: center;
     color:white;
     text-transform: capitalize;
+     margin-left:20px;
 }
 
 
 .btn-box{
     display:flex;
     gap:10px;
-    justify-content: center;
-    align-items: center;
+    //justify-content: center;
+    //align-items: center;
     margin-top: 20px;
+     margin-left:20px;
 }
 
 .btn button{
-    background:orange;
+     background: linear-gradient(rgb(246, 147, 164), rgb(9, 9, 227));
     color:white;
     text-decoration: none;
-    padding:12px 24px;
+    padding:15px;
     border-radius: 5px;
-    font-weight: 600;
+    font-weight:bold;
     cursor:pointer;
     border:none;
+    font-size: 15px;
+}
+
+.btn button:hover{
+    background:rgb(250, 248, 248);
+    color:rgb(2, 2, 2);
 }
 
 .top3 h1{
     color:orange;
     margin-top: 20px;
-    font-size: 10px;
-    margin-left: 12px;
+    font-size: 15px;
+    text-align: center;
 }
 
 .top3 h2{
-    margin-left: 10px;
+    text-align: center;
     color:rgb(7, 0, 0);
-    
+    font-size: 30px;
 }
 
 .container{
@@ -120,20 +142,23 @@ nav a{
     color:orange;
     text-transform: capitalize;
     margin-top: 5px;
+    text-align: center;
 }
 
 .photo p{
     color:rgb(7, 0, 0);
     text-transform: capitalize;
     margin-top: 5px;
+    text-align: center;
+    line-height: 25px;
 }
 
 
 
 
 .section1 img{
-    width:50%;
-    height:200px;
+    width:40%;
+    height:230px;
     padding-top: 50px;
 }
 
@@ -143,7 +168,7 @@ nav a{
     padding:15px 30px;
     //border:1px solid black;
     margin-bottom: 20px;
-    background:rgb(232, 229, 229);
+    background:linear-gradient(#141e30, #243b55);
     border-radius: 10px;
 }
 
@@ -157,19 +182,20 @@ nav a{
 .section2 h2{
     margin-bottom: 15px;
     font-size: 40px;
+    color:white;
 }
 
 .section2 p{
     margin-bottom: 12px;
     text-transform: capitalize;
     line-height: 30px;
-    color:black;
+    color:rgb(247, 245, 245);
     font-weight: bold;
 }
 
 .section2 button{
     margin-left: -1px;
-    background:orange;
+     background: linear-gradient(rgb(246, 147, 164), rgb(9, 9, 227));
     color:white;
     border:10px orange;
     cursor:pointer;
@@ -177,17 +203,17 @@ nav a{
 }
 
 .our h1{
-    margin-left: 43px;
+    text-align: center;
     text-transform: capitalize;
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 7px;
     color:orange;
 }
 
 .our h2{
     text-transform: capitalize;
-    margin-left: 40px;
-    font-size: 21px;
+    text-align: center;
+    font-size: 30px;
     margin-bottom: -8px;
 }
 
@@ -204,17 +230,17 @@ nav a{
 }
 
 .sss h1{
-    margin-left: 33px;
+    text-align: center;
     text-transform: capitalize;
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 7px;
     color:orange;
 }
 
 .sss h2{
     text-transform: capitalize;
-    margin-left: 32px;
-    font-size: 21px;
+    text-align: center;
+    font-size: 23px;
     margin-bottom: 8px;
 }
 
@@ -223,9 +249,10 @@ nav a{
     justify-content: space-between;
     padding:15px 30px;
     text-transform: capitalize;
-    background:black;
+    background:rgba(11, 16, 38, 0.95);
     color:white;
     margin-bottom: 10PX;
+    font-size: 13px;
 }
 
 h6{
@@ -278,7 +305,7 @@ h6{
     display:flex;
     justify-content: space-between;
     padding:10px 30px;
-    background:rgb(246, 161, 4);
+    background:linear-gradient(#141e30, #243b55);
     margin-bottom: 50px;
     align-items: center;
     margin-top: 50px;
@@ -308,14 +335,12 @@ h6{
 }
 
 
-
-
 footer{
     display:grid;
     grid-template-columns: repeat(5,1fr);
     padding:15px 30px;
     gap:10px;
-    background:black;
+    background:rgba(11, 16, 38, 0.95);
     color:white;
     justify-content: space-between;
     display:flex;
@@ -333,6 +358,8 @@ footer{
     margin-top: 10px;
 }
 
+
+
 .nicha h4{
     text-transform: capitalize;
     color:orange;
@@ -347,14 +374,13 @@ footer{
     font-size: 15px;
 }
 
-.kya h1{
-
-}
 
 @media screen and (max-width: 768px) {
  
     header{
         flex-direction: column;
+        gap:20px;
+        padding:10px;
     }
 
     .top2{
