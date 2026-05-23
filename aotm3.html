@@ -18,6 +18,9 @@
 </header>
 
 <body>
+    
+     <button id="topBtn">⬆️</button>
+
     <div class="top2">
         <h1>OUR <span>COURSE</span></h1>
         <p>Arena Animation offers career-oriented courses in design, motion graphics,<br> and web development with practical
@@ -31,6 +34,7 @@
         <h1>EXPLORE PROGRAMS</h1>
         <h2>CHOOSE YOUR PATH</h2>
     </div>
+</div>
 
 
     <div class="container">
@@ -183,6 +187,38 @@
         </div>
 
     </footer>
+
+
+    <script>
+
+var btn = document.getElementById("topBtn")
+
+/* Scroll Event */
+
+window.onscroll = function(){
+
+    if(window.scrollY > 200)
+    {
+        btn.style.display = "block"
+    }
+    else
+    {
+        btn.style.display = "none"
+    }
+
+}
+
+/* Click Event */
+
+btn.onclick = function(){
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    })
+
+}
+</script>
 
 </body>
 
