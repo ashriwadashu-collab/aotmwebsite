@@ -186,40 +186,35 @@
 
         </div>
 
-    </footer>
+    </footer> 
 
+    
 
-    <script>
+    
+<script>
 
 var btn = document.getElementById("topBtn")
 
-/* Scroll Event */
-
 window.onscroll = function(){
 
-    if(window.scrollY > 200)
-    {
+    if(window.scrollY > 200){
         btn.style.display = "block"
     }
-    else
-    {
+    else{
         btn.style.display = "none"
     }
-
 }
-
-/* Click Event */
 
 btn.onclick = function(){
 
-    window.scrollTo({
+    window.scroll({
         top:0,
         behavior:"smooth"
     })
-
 }
+
+
+
 </script>
-
 </body>
-
 </html>
