@@ -18,6 +18,33 @@
         //background:black;
     }
 
+
+    #topBtn {
+
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+
+        width: 60px;
+        height: 60px;
+
+        border: none;
+        border-radius: 50%;
+
+        background: #000;
+        color: white;
+
+        font-size: 28px;
+        cursor: pointer;
+
+        box-shadow: 0px 0px 15px gray;
+
+        display: none;
+
+        transition: 0.4s;
+
+    }
+
     header {
         display: flex;
         justify-content: space-between;
@@ -114,7 +141,6 @@
         height: 200px;
         justify-content: center;
         align-items: center;
-        //margin-left: 45px;
         margin:auto;
         display:block;
     }
@@ -168,9 +194,10 @@
     }
 
     .top12 img {
-        width: 80%;
+        width: 60%;
         height: 250px;
-        margin-left: 30px;
+        margin:auto;
+        display:block;
     }
 
     .top13 H1 {
@@ -190,12 +217,94 @@
         text-transform: capitalize;
         font-size: 9px;
     }
+
+
+     @media screen and (max-width: 768px) {
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        header {
+            flex-direction: column;
+            gap: 10px;
+            padding:5px;
+        }
+
+        .top3 h1{
+            text-align: center;
+        }
+
+
+        .container{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:20px;
+        }
+
+        .top4 img{
+            width:40%;
+            height:100px;
+            margin:auto;
+            display:block;
+        }
+       
+        .top5 h1{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .top6{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:20px;
+        }
+
+        .top7 img{
+            height:170px;
+        }
+
+        .top7 h1{
+            text-align: center;
+        }
+
+        .top8 {
+            flex-direction: column;
+            text-align: center;
+            gap:20px;
+        }
+
+        .top10 h1{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .top11{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:20px;
+        }
+
+        .top11 img{
+            height:200px;
+            cursor:pointer;
+        }
+
+
+    }
+
+
+
 </style>
 <link rel="stylesheet" href="videoeditor.css">
 <header>
     <h1>ARENA ANIMATION</h1>
     <nav>
-        <a href="aotm2.html">home</a>
+        <a href="index.html">home</a>
         <a href="aotm3.html">course</a>
         <a href="#">student work</a>
         <a href="#">contact</a>
@@ -203,6 +312,10 @@
 </header>
 
 <body>
+
+     <button id="topBtn">⬆️</button>
+
+
     <div class="top">
         <img src="images/s4.jpg">
     </div>
@@ -344,6 +457,31 @@
             <h2>india</h2>
         </div>
     </footer>
+
+    <script>
+
+        var btn = document.getElementById("topBtn")
+
+        window.onscroll = function () {
+
+            if (window.scrollY > 200) {
+                btn.style.display = "block"
+            }
+            else {
+                btn.style.display = "none"
+            }
+        }
+
+        btn.onclick = function () {
+            window.scroll({
+                top: 0,
+                behavior: "smooth"
+            })
+        }
+
+
+
+    </script>
 </body>
 
 </html>

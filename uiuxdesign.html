@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,41 @@
     }
 
     body {
-        background:rgb(247, 244, 244);
+        background: rgb(247, 244, 244);
+    }
+
+
+    #topBtn {
+
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+
+        width: 60px;
+        height: 60px;
+
+        border: none;
+        border-radius: 50%;
+
+        background: #000;
+        color: white;
+
+        font-size: 28px;
+        cursor: pointer;
+
+        box-shadow: 0px 0px 15px gray;
+
+        display: none;
+
+        transition: 0.4s;
+
+    }
+
+    #topBtn:hover {
+
+        transform: scale(1.1);
+        background: #ff004c;
+
     }
 
     header {
@@ -65,7 +100,7 @@
     .container {
         display: flex;
         justify-content: space-between;
-        padding:15px;
+        padding: 15px;
     }
 
     .top4 img {
@@ -103,15 +138,15 @@
     }
 
     .top6 {
-        display:grid;
+        display: grid;
         grid-template-columns: repeat(6, 1fr);
-        gap:10px;
-        padding:15px 30px;
+        gap: 10px;
+        padding: 15px 30px;
     }
 
     .top7 img {
-        width:100%;
-        height:300px;
+        width: 100%;
+        height: 300px;
     }
 
     .top7 h1 {
@@ -184,6 +219,115 @@
         text-transform: capitalize;
         font-size: 9px;
     }
+
+    @media screen and (max-width: 768px) {
+
+
+        header {
+            flex-direction: column;
+        }
+
+        header h1 span {
+            color: orange;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        header nav {
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .top img{
+            height:500px;
+        }
+
+        .top2 h1{
+            text-align: center;
+        }
+
+        .top2 p{
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .top3 h1{
+            text-align: center;
+        }
+
+        .container{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:20px;
+            padding:15px 30px;
+        }
+
+        .top4 img{
+            margin:auto;
+            display:block;
+            height:200px;
+            width:100%;
+        }
+
+        .top4 h2{
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .top4 h3{
+            text-align: center;
+            line-height: 20px;
+        }
+
+        .top5 h1{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .top6{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:20px;
+            padding:15px 30px;
+        }
+
+        .top7 img{
+            margin:auto;
+            display:block;
+            width:100%;
+            height:280px;
+        }
+
+        .top7 h1{
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .top8{
+            flex-direction: column;
+            text-align: center;
+            gap:20px;
+        }
+
+        .top9 h1{
+            text-align: center;
+        }
+
+        .top11{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:20px;
+            padding:15px 30px;
+        }
+
+        .top12 img{
+            width:100%;
+            height:250px;
+            margin:auto;
+            display:block;
+        }
+
+    }
 </style>
 <link rel="stylesheet" href="videoeditor.css">
 <header>
@@ -195,14 +339,24 @@
         <a href="#">contact</a>
     </nav>
 </header>
+
 <body>
-     <div class="top">
+
+    <button id="topBtn">⬆️</button>
+
+
+    <div class="top">
         <img src="images/s1.png">
     </div>
 
     <div class="top2">
         <h1>ABOUT TO UI UX</h1>
-        <p>UI/UX design is the process of creating user-friendly and attractive digital interfaces for websites and mobile apps. UI stands for User Interface, which focuses on colors, buttons, layouts, and visual design. UX stands for User Experience, which improves how users interact with a product easily and smoothly. Designers use tools like Figma and Adobe XD to create wireframes and prototypes. UI/UX design helps make websites and apps more modern, simple, and engaging. This field requires creativity, problem-solving, and design skills. UI/UX design is an important career option in the technology and digital industry.</P>
+        <p>UI/UX design is the process of creating user-friendly and attractive digital interfaces for websites and
+            mobile apps. UI stands for User Interface, which focuses on colors, buttons, layouts, and visual design. UX
+            stands for User Experience, which improves how users interact with a product easily and smoothly. Designers
+            use tools like Figma and Adobe XD to create wireframes and prototypes. UI/UX design helps make websites and
+            apps more modern, simple, and engaging. This field requires creativity, problem-solving, and design skills.
+            UI/UX design is an important career option in the technology and digital industry.</P>
     </div>
     </div>
 
@@ -210,7 +364,7 @@
     <div class="top3">
         <h1> TOOLS OF THE TRADE</h1>
     </div>
-</div>
+    </div>
 
     <div class="container">
         <div class="top4">
@@ -324,5 +478,31 @@
             <h2>india</h2>
         </div>
     </footer>
+
+    <script>
+
+        var btn = document.getElementById("topBtn")
+
+        window.onscroll = function () {
+
+            if (window.scrollY > 200) {
+                btn.style.display = "block"
+            }
+            else {
+                btn.style.display = "none"
+            }
+        }
+
+        btn.onclick = function () {
+            window.scroll({
+                top: 0,
+                behavior: "smooth"
+            })
+        }
+
+
+
+    </script>
 </body>
+
 </html>
