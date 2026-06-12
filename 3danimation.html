@@ -20,7 +20,7 @@
 
 
 
-    
+
     #topBtn {
 
         position: fixed;
@@ -64,8 +64,14 @@
     nav a {
         text-decoration: none;
         margin: 10px;
-        font-size: 20px;
+        font-size: 18px;
+        text-align: center;
         color: white;
+    }
+
+    header h1 {
+        font-size: 20px;
+        font-weight: bold;
     }
 
     .top img {
@@ -208,14 +214,41 @@
         color: orange;
     }
 
-    .top14 {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 15px 30px;
+        gap: 10px;
         background: black;
         color: white;
-        display: flex;
         justify-content: space-between;
-        padding: 15px 30px;
+        display: flex;
+    }
+
+    .feet img {
+        width: 80%;
+        height: 100px;
+        box-shadow: 5px 5px 5px white;
+
+    }
+
+    .last h4 {
         text-transform: capitalize;
-        font-size: 9px;
+        margin-top: 10px;
+    }
+
+    .nicha h4 {
+        text-transform: capitalize;
+        color: orange;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .nicha p {
+        line-height: 30px;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 15px;
     }
 
 
@@ -232,111 +265,100 @@
         header {
             flex-direction: column;
             gap: 10px;
-            padding:5px;
+            padding: 5px;
         }
 
 
-        .top img{
-            height:400px;
+        .top img {
+            height: 400px;
         }
 
 
-    .top2 h1{
-        text-align: center;
+        .top2 h1 {
+            text-align: center;
+        }
+
+        .top2 p {
+            font-size: 13px;
+            text-align: center;
+        }
+
+
+
+
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+
+        .top4 img {
+            height: 200px;
+            margin: auto;
+            display: block;
+        }
+
+
+        .top5 h1 {
+            text-align: center;
+            font-size: 20px;
+        }
+
+
+        .top6 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .top7 {
+            margin: auto;
+            display: block;
+        }
+
+        .top7 h1 {
+            color: blue;
+        }
+
+        .top7 h2 {
+            text-align: center;
+            line-height: 20px;
+            text-transform: lowercase;
+        }
+
+        .top8 {
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .top11 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 15px 30px;
+        }
+
+        .top12 img {
+            height: 270px;
+            width: 100%;
+            margin: auto;
+            display: block;
+        }
+
+
     }
-
-    .top2 p{
-        font-size: 13px;
-        text-align: center;
-    }
-
-
-
-
-    
-
-    .container{
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
-        gap:20px;
-    }
-
-    .top4 img{
-        height:200px;
-        margin:auto;
-        display:block;
-    }
-
-
-    .top5 h1{
-        text-align: center;
-        font-size: 20px;
-    }
-
-
-    .top6{
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        gap:10px;
-    }
-
-    .top7{
-        margin:auto;
-        display:block;
-    }
-
-    .top7 h1{
-        color: blue;
-    }
-
-    .top7 h2{
-        text-align: center;
-        line-height: 20px;
-        text-transform: lowercase;
-    }
-
-    .top8{
-        flex-direction: column;
-        text-align: center;
-        gap:20px;
-    }
-
-    .top11{
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        gap:20px;
-        padding:15px 30px;
-    }
-
-    .top12 img{
-        height:270px;
-        width:100%;
-        margin:auto;
-        display:block;
-    }
-
-
-    }
-
-
-
-
-
-
-
-
-
-
-
 </style>
 <link rel="stylesheet" href="videoeditor.css">
 <header>
-    <h1>ARENA ANIMATION</h1>
+    <h1><span>Arena </span>Animation</h1>
     <nav>
-        <a href="aotm2.html">home</a>
-        <a href="aotm3.html">course</a>
-        <a href="#">student work</a>
-        <a href="#">contact</a>
+        <a href="index.html">home</a>
+        <a href="aotm3.html">about us</a>
+        <a href="#">courses</a>
+        <a href="#">contact us</a>
     </nav>
 </header>
 
@@ -459,12 +481,41 @@
     </div>
 
     <footer>
-        <div class="top14">
-            <h2>7458949544</h2>
-            <h2>arena@gmail.com</h2>
-            <h2>delhi</h2>
-            <h2>india</h2>
+
+        <div class="feet">
+            <img src="images/2ndphoto.jpg">
+            <div class="last">
+                <h4>learn from the leader</h4>
+            </div>
         </div>
+
+
+        <div class="nicha">
+            <h4> quicks links</h4>
+            <p>Home</p>
+            <p>course</p>
+            <p>about us</p>
+            <p>contact us</p>
+        </div>
+
+        <div class="nicha">
+            <h4>courses</h4>
+            <p>graphics design</p>
+            <p>ui/ux design</p>
+            <p>3d animation</p>
+            <p>vfx</p>
+            <p>web design</p>
+            <p>video editing</p>
+        </div>
+
+        <div class="nicha">
+            <h4>contact us</h4>
+            <p>gtb nagar, delhi</p>
+            <p>+91 9876543210</p>
+            <p>info@arenaanimation.com</p>
+
+        </div>
+
     </footer>
 
     <script>
