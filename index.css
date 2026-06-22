@@ -442,11 +442,12 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        padding: 20px 40px;
+        padding: 10px 20px;
     }
 
     .photo img{
-        height:220px;
+        width:100%;
+        height:280px;
         border-radius: 10px;
         margin:auto;
         display:block;
@@ -462,6 +463,7 @@ footer {
 
     .section1 {
         flex-direction: column;
+        border-radius: 20px;
 
     }
 
@@ -476,6 +478,7 @@ footer {
         width: 100%;
         text-align: center;
         margin-top: -170px;
+        border-radius: 20px;
     }
 
     .our h1 {
@@ -491,13 +494,14 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        padding: 20px 40px;
+        padding: 30px 20px;
     }
 
 
     .hlo img{
-         height:220px;
-        border-radius: 10px;
+        width:100%;
+         height:280px;
+        border-radius: 20px;
         margin:auto;
         display:block;
     }
